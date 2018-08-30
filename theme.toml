@@ -1,0 +1,89 @@
+
+baseURL = "http://localhost"
+title = "zeanzai"
+languageCode = "zh-CN"
+paginate = "5" # Number of posts per page
+theme = "zeanzaiblogtheme"
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+[Author] # author box information
+    name = "zeanzai"
+    bio = "description of the Author"
+    avatar = "img/avatar.png"
+    homepage = "https://zeanzai.github.io"
+
+[Params]
+    subtitle = "Just another site" # Subtitle of your site. Used in site header
+    description = "What else did you expect me to say?"
+    opengraph = true # Enable OpenGraph if true
+    twitter_cards = false # Enable Twitter Cards if true
+    readmore = true # Show "Read more" button in list if true
+    authorbox = true # Show authorbox at bottom of pages if true
+    #toc = true # Enable Table of Contents
+    post_navigation = false # Show post navigation at bottom of pages if true
+    postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
+    postSections = ["blog", "news"] # alternative that shows more than one section's pages
+    #dateformat = "2006-01-02" # change the format of dates
+    mathjax = true # Enable MathJax
+    #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
+    #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+[Params.sidebar]
+    home = "right" # Configure layout for home page
+    list = "right"  # Configure layout for list pages
+    single = "right" # Configure layout for single pages
+    # Enable widgets in given order
+    widgets = ["search", "recent", "categories", "taglist", "social"]
+
+[Params.widgets]
+    recent_num = 5 # Set the number of articles in the "Recent articles" widget
+    tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+[Params.widgets.social]
+    # Enable parts of social widget
+    # facebook = "username"
+    # twitter = "username"
+    # linkedin = "username"
+    # telegram = "username"
+    github = "zeanzai"
+    # gitlab = "username"
+    email = "438123371@qq.com"
+    # google_plus = "profileid"
+    weibo = "zeanzai"
+    zhihu = "zeanzai"
+
+[[menu.main]]
+    identifier = "test"
+    name = "测试"
+    url = "/post/test"
+    weight = 1
+
+[[menu.main]]
+    identifier = "archives"
+    name = "存档"
+    url = "/post/archives/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "network"
+    name = "计算机网络"
+    url = "/post/network/"
+    weight = 4
+
+[[menu.main]]
+    identifier = "vue"
+    name = "vue"
+    url = "/post/vue/"
+    weight = 5
+
+[[menu.main]]
+    identifier = "spring-cloud"
+    name = "spring-cloud"
+    url = "/post/spring-cloud/"
+    weight = 6
+
+[[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/post/about/"
+    weight = 6
