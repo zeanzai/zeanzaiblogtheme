@@ -10,7 +10,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [Author] # author box information
     name = "zeanzai"
     bio = "description of the Author"
-    avatar = "img/avatar.png"
+    avatar = "img/avatar.jpg"
     homepage = "https://zeanzai.github.io"
 
 [Params]
