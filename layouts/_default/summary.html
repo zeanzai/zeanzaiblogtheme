@@ -13,8 +13,9 @@
 			</h3>
 			{{- if or (not .Date.IsZero) .Params.categories }}<div class="list__meta meta">{{ partial "post_meta.html" . }}</div>{{- end }}
 		</header>
+		<!-- 在此处添加简要的字数 -->
 		<div class="list__excerpt post__content">
-			{{ .Summary }}
+			{{ truncate 200 .Summary }}
 		</div>
 		{{- if .Site.Params.readmore }}
 		{{- if .Truncated }}
