@@ -15,12 +15,22 @@
 		<div class="post__content clearfix">
 			{{ .Content }}
 		</div>
+		<!-- <dev style="border-top: 1px solid #ebebeb">
+
+			<table>
+				<tr><td style="text-align: right;">文档标题: </td><td>{{ .Title }}</td></tr><tr>
+					<td style="text-align: right;">发表作者: </td><td><a href="{{ "" | absLangURL  }}">{{ .Site.Author.name }}</a></td></tr><tr>
+					<td style="text-align: right;">原始连接: </td><td>{{ .Site.BaseURL }}{{ .URL }}</td></tr><tr>
+					<td style="text-align: right;">许可协议: </td><td>自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</td></tr><tr>
+				</tr>
+			</table>
+			<hr />
+		</dev> -->
 		{{ partial "post_tags.html" . }}
 	</article>
 	{{ partial "authorbox.html" . }}
 	{{ partial "post_nav.html" . }}
 	{{ partial "comments.html" . }}
 </main>
-
 {{ partial "sidebar.html" . }}
 {{ partial "footer.html" . }}

@@ -7,6 +7,13 @@ theme = "zeanzaiblogtheme"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
+
+[blackfriday]
+    angledQuotes = true
+    fractions = false
+    plainIDAnchors = true
+    extensions = ["hardLineBreak"]
+
 [Author] # author box information
     name = "zeanzai"
     bio = "description of the Author"
