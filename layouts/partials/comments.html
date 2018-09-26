@@ -1,13 +1,13 @@
-<!-- {{ if and .Site.DisqusShortname (not (or .Site.Params.disable_comments .Params.disable_comments)) (not .Site.IsServer) }}
+{{ if and .Site.DisqusShortname (not (or .Site.Params.disable_comments .Params.disable_comments)) (not .Site.IsServer) }}
 <section class="comments">
 	{{ template "_internal/disqus.html" . }}
 </section>
-{{ end }} -->
+{{ end }}
 
 
 
 
-{{ if (.Site.Params.gitment) }}
+<!-- {{ if (.Site.Params.gitment) }}
 <div id="git-comments"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
@@ -23,4 +23,4 @@
   })
   gitment.render('git-comments')
 </script>
-{{ end }}
+{{ end }} -->
