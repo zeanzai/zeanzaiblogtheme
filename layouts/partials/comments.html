@@ -3,24 +3,3 @@
 	{{ template "_internal/disqus.html" . }}
 </section>
 {{ end }}
-
-
-
-
-<!-- {{ if (.Site.Params.gitment) }}
-<div id="git-comments"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-  var gitment = new Gitment({
-    id: '{{ .File.BaseFileName }}',  // 可选, 默认为 location.href
-    owner: '{{ .Site.Params.owner }}',
-    repo: '{{ .Site.Params.repo }}',
-    oauth: {
-      client_id: '{{ .Site.Params.client_id }}',
-      client_secret: '{{ .Site.Params.client_secret }}',
-    }
-  })
-  gitment.render('git-comments')
-</script>
-{{ end }} -->
